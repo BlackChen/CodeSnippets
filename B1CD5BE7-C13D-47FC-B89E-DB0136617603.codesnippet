@@ -48,7 +48,7 @@ self.navigationItem.titleView = titleView;</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>搜索框初始化</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>SearchBar - 搜索框</string>
+	<string>SearchBar</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

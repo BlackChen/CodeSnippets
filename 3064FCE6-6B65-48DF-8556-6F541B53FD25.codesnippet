@@ -23,8 +23,10 @@
 	<string>3064FCE6-6B65-48DF-8556-6F541B53FD25</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>读取本地json文件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Json - 读取本地json文件</string>
+	<string>read local json file</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

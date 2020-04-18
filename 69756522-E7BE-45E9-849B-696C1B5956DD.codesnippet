@@ -37,9 +37,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>navigationBar</string>
+	<string>navigationBar导航栏</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NavigationBar - 导航栏</string>
+	<string>NavigationBar</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

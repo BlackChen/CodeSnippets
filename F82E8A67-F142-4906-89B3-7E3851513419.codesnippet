@@ -54,7 +54,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>网络请求方法</string>
+	<string>AFN: 网络请求数据方法</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>AFN httpMethod</string>
 	<key>IDECodeSnippetUserSnippet</key>

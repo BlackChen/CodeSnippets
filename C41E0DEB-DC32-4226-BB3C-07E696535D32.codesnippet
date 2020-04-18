@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>isBlackString</string>
+	<string>isBlankString</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -33,6 +33,8 @@
 	<string>C41E0DEB-DC32-4226-BB3C-07E696535D32</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>String - 判空 空格 换行</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>String - 判空 空格 换行</string>
 	<key>IDECodeSnippetUserSnippet</key>

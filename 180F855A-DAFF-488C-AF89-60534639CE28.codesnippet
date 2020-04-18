@@ -3,23 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>if</string>
+	<string>///</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if(&lt;#expression#&gt;){
-
-    }else if (&lt;#expression#&gt;){
-
-    }</string>
+	<string>/**
+ *	&lt;# Title #&gt;
+ *
+ *	@param &lt;# param #&gt;
+ *
+ *	@return &lt;# return #&gt;
+ */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3DE86DAF-841D-4D4B-A3D6-79D96A24F3C0</string>
+	<string>180F855A-DAFF-488C-AF89-60534639CE28</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Code Annotation - moreline</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>If - 条件语句</string>
+	<string>Code Annotation more</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -72,8 +72,10 @@
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIButton 懒加载并初始化</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Button - 初始化</string>
+	<string>Button</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

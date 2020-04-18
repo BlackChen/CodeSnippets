@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@pro</string>
+	<string>//.</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@protocol &lt;#protocol name#&gt; &lt;NSObject&gt;
-
-&lt;#methods#&gt;
-
-@end</string>
+	<string>/* &lt;# summary #&gt; */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B4BF7D77-BDCE-47F3-9B48-01DC899702FD</string>
+	<string>812F5708-E49C-442E-9B74-6CD6B4981A23</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Code Annotation - SingleLine</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Protocol - 协议声明关键字</string>
+	<string>Code Annotation single</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
