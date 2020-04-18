@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>viewWillA</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+        //设置导航栏透明
+    [self.navigationController.navigationBar setTranslucent:true];
+        //把背景设为空
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+        //处理导航栏有条线的问题
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+        //设置NavigationBar上的title的颜色
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor],NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:17]}];
+        //设置背景颜色
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+        //设置按钮颜色
+    [self.navigationController.navigationBar setTintColor:[UIColor grayColor]];
+    
+    self.navigationController.navigationBarHidden = YES;
+
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>69756522-E7BE-45E9-849B-696C1B5956DD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>navigationBar</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NavigationBar - 导航栏</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

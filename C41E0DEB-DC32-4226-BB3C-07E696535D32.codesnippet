@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>isBlackString</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+  (BOOL)isBlankString:(NSString *)aStr {
+        //1.NSString对象没有初始值。
+    if (!aStr) {
+        return YES;
+    }
+        //期望得到一个NSString字符串, 但却不幸遇到了NSNull。
+    if ([aStr isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+        //字符串中除了空格和换行, 不包含任何其他字符。
+        // 创建一个字符集对象, 包含所有的空格和换行字符
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+        // 从字符串中过滤掉首尾的空格和换行, 得到一个新的字符串
+    NSString *trimmedStr = [aStr stringByTrimmingCharactersInSet:set];
+        // 判断新字符串的长度是否为0
+    if (!trimmedStr.length) {
+            // 字符串为空
+    }
+    return NO;
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C41E0DEB-DC32-4226-BB3C-07E696535D32</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>String - 判空 空格 换行</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

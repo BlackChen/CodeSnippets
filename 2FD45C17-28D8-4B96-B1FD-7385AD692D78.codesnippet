@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hitTest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassInterfaceMethods</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *view = [super hitTest:point withEvent:event];
+    NSLog(@";;;;;;;;;;;;;;;;;;;");
+
+    CGPoint tempPoint = [self.fansBtn convertPoint:point fromView:self];
+           if ([self.fansBtn pointInside:tempPoint withEvent:event]) {
+               return self.fansBtn;
+           }
+    return view;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2FD45C17-28D8-4B96-B1FD-7385AD692D78</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>超出父视图范围点击事件</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Touch - 点击</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

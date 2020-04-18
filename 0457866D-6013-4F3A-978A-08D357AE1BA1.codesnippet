@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-warning name"
+#pragma clang diagnostic ignored "-Wunused-variable" 未使用的变量 
+#pragma clang diagnostic ignored "-Warc-retain-cycles" retain cycle 
+#pragma clang diagnostic ignored "-Wdeprecated-declarations" 方法弃用警告 
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types" 不兼容的指针类型
+
+        // your code
+#pragma clang diagnostic pop
+
+
+inhibit_all_warnings! //cocoPods警告</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0457866D-6013-4F3A-978A-08D357AE1BA1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>消除警告</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Warning - 警告</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

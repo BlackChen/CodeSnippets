@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>statusBar</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassInterfaceMethods</string>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIView *)statusView{
+    if (!_statusView) {
+        UIView *shareStatus;
+        if (@available(iOS 13.0, *)) {
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wundeclared-selector"
+            UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager;
+            if ([statusBarManager respondsToSelector:@selector(createLocalStatusBar)]) {
+                UIView *_localStatusBar = [statusBarManager performSelector:@selector(createLocalStatusBar)];
+                if ([_localStatusBar respondsToSelector:@selector(statusBar)]) {
+                    shareStatus = [_localStatusBar performSelector:@selector(statusBar)];
+                }
+            }
+//
+//            if (!_statusView) {
+//                // iOS 13  弃用keyWindow属性  从所有windowl数组中取
+//                UIWindow *keyWindow = [UIApplication sharedApplication].windows[0];
+//                _statusView = [[UIView alloc] initWithFrame:keyWindow.windowScene.statusBarManager.statusBarFrame];
+//                [keyWindow addSubview:_statusView];
+//            }
+        #pragma clang diagnostic pop
+        } else {
+            shareStatus = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+        }
+            shareStatus.backgroundColor = [UIColor whiteColor];
+            _statusView = shareStatus;
+        }
+    return _statusView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5622A9CA-FB8A-48BB-9869-070B01E3835C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>状态栏</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>StatusBar - 状态栏</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

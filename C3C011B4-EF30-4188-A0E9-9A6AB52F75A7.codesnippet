@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Color</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CAGradientLayer *gl = [CAGradientLayer layer];
+    gl.frame = CGRectMake(0,0,view_width,view_height);
+    gl.startPoint = CGPointMake(0, 0);
+    gl.endPoint = CGPointMake(1, 1);
+    gl.colors = @[(__bridge id)[UIColor colorWithRed:255/255.0 green:136/255.0 blue:26/255.0 alpha:1.0].CGColor,(__bridge id)[UIColor colorWithRed:252/255.0 green:84/255.0 blue:0/255.0 alpha:1.0].CGColor];
+    gl.locations = @[@(0),@(1.0f)];
+    [self.layer addSublayer:gl];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C3C011B4-EF30-4188-A0E9-9A6AB52F75A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>渐变色</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Color - 渐变色</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

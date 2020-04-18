@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>loadInfo</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark ---加载数据---
+- (void)load&lt;#Type#&gt;InfoIsMore:(BOOL)isMore{
+    if (!isMore) {
+        self.dataArray = [NSMutableArray array];
+    }
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    NSDictionary *dic = @{};
+    
+    NSString *urlString = @"";
+    [[BCNetworking sharedInstance] httpsUrl:urlString parameters:dic httpMethod:POST progress:nil
+                            responseSuccess:^(NSDictionary * _Nonnull dictionary) {
+                                [MBProgressHUD hideHUDForView:self.view];
+                                [self.tableView.mj_header endRefreshing];
+                                NSArray *arr = [dictionary objectForKey:@"dataList"];
+                                if (arr.count &lt; 10) {
+                                    [self.tableView.mj_footer endRefreshingWithNoMoreData];
+                                }else{
+                                    [self.tableView.mj_footer endRefreshing];
+                                }
+                                [self.dataArray addObjectsFromArray:arr];
+ JCHATMAINTHREAD(^{
+                                    [self.tableView reloadData];
+                                });
+                            } responseFailure:^(NSString * _Nonnull failureInfo) {
+                                [self.tableView.mj_header endRefreshing];
+                                [self.tableView.mj_footer endRefreshing];
+                                JCHATMAINTHREAD(^{
+                                    [self.tableView reloadData];
+                                });
+                                [MBProgressHUD showHUDAddTo:self.view Text:failureInfo animated:YES mode:MBProgressHUDModeText after:1];
+                            } failure:^(NSError * _Nonnull error) {
+                                [self.tableView.mj_header endRefreshing];
+                                [self.tableView.mj_footer endRefreshing];
+                                JCHATMAINTHREAD(^{
+                                    [self.tableView reloadData];
+                                });
+                                [MBProgressHUD showHUDAddTo:self.view Text:error.localizedDescription animated:YES mode:MBProgressHUDModeText after:1];
+                            }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F82E8A67-F142-4906-89B3-7E3851513419</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>网络请求方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>AFN httpMethod</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

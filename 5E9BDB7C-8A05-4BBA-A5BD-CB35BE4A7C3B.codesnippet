@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>DrawLine</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 返回虚线image的方法
+- (UIImage *)drawLineByImageView:(UIImageView *)imageView{
+    UIGraphicsBeginImageContext(imageView.frame.size); //开始画线 划线的frame
+    [imageView.image drawInRect:CGRectMake(0, 0, imageView.frame.size.width, imageView.frame.size.height)];
+    //设置线条终点形状
+    CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
+    // 5是每个虚线的长度 1是高度
+    CGFloat lengths[] = {1,3};
+    CGContextRef line = UIGraphicsGetCurrentContext();
+    // 设置颜色
+    CGContextSetStrokeColorWithColor(line, [UIColor whiteColor].CGColor);
+    CGContextSetLineDash(line, 0, lengths, 1); //画虚线
+    CGContextMoveToPoint(line, 0.0, 2.0); //开始画线
+    CGContextAddLineToPoint(line, 1, imageView.frame.size.height);
+    
+    CGContextStrokePath(line);
+    // UIGraphicsGetImageFromCurrentImageContext()返回的就是image
+    return UIGraphicsGetImageFromCurrentImageContext();
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5E9BDB7C-8A05-4BBA-A5BD-CB35BE4A7C3B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>画虚线</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Image - 画虚线</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

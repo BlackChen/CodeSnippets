@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NSMutableAttributedString</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // 段落样式(NSMutableParagraphStyle)
+    //    https://my.oschina.net/yejiexiaobai/blog/895108 文档
+NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+paragraphStyle.lineSpacing = 4.0;// 行间距
+paragraphStyle.headIndent = 33;  // 非首行缩进
+
+NSDictionary *attributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:15],//字体大小
+                             NSParagraphStyleAttributeName:paragraphStyle,  //段落
+                             };
+
+NSMutableAttributedString * attriStr = [[NSMutableAttributedString alloc] initWithString:str attributes:attributes];
+
+[attriStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:11] range:NSMakeRange(name.length, str.length-name.length)];
+[attriStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(name.length, str.length-name.length)];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B13B767C-C9AF-4BB2-BBB0-19A7B4643CAE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>行间距 文字格式 颜色 大小</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>AttributedString - 行间距 文字格式</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
