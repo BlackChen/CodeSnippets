@@ -10,20 +10,19 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/**
- *	&lt;# Title #&gt;
- *
- *	@param &lt;# param #&gt;
- *
- *	@return &lt;# return #&gt;
+ @brief &lt;# brief #&gt;
+ @discussion &lt;#discussion#&gt;  
+ @param &lt;#param#&gt;   &lt;#detail#&gt; 
+ @result &lt;#return#&gt;
  */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>180F855A-DAFF-488C-AF89-60534639CE28</string>
+	<string>0F096F0E-8310-4FA9-9046-8311ED15DFCB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Code Annotation - moreline</string>
+	<string>多行注释</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation more</string>
+	<string>Code Annotation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,19 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>//.</string>
+	<string>///</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;# summary #&gt; */</string>
+	<string>/**
+ @brief &lt;# brief #&gt;
+ @discussion &lt;#discussion#&gt;
+ @param &lt;#param#&gt;   &lt;#detail#&gt;
+ @result &lt;#return#&gt;
+ */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>812F5708-E49C-442E-9B74-6CD6B4981A23</string>
+	<string>467E5367-79CF-4820-98CE-D2ABA8F8BE9D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>单行注释</string>
+	<string>多行注释</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Code Annotation</string>
 	<key>IDECodeSnippetUserSnippet</key>

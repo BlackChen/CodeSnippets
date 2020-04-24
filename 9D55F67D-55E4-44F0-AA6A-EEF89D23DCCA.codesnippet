@@ -3,24 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>//.</string>
+	<string>to</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>ClassInterfaceMethods</string>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;# summary #&gt; */</string>
+	<string>- (void)to&lt;#doWhat?#&gt; {
+
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>812F5708-E49C-442E-9B74-6CD6B4981A23</string>
+	<string>9D55F67D-55E4-44F0-AA6A-EEF89D23DCCA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>单行注释</string>
+	<string>to方法,转场,切换等</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation</string>
+	<string>to Method</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
