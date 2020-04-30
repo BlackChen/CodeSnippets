@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>bundle</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>StringOrComment</string>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//framework读取自身bundle资源也要加上库名,不然读不到
+	//1.长码
+	ivImageTest.image = [UIImage imageNamed:@"&lt;#imageName#&gt;" inBundle:[NSBundle bundleWithPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"&lt;#frameworkName#&gt;.framework/&lt;#BundleName#&gt;.bundle"]] compatibleWithTraitCollection:nil];
+	//2.代码分步
+	NSString *bundleName = @"&lt;#frameworkName#&gt;.framework/&lt;#BundleName#&gt;";
+	NSString *bundlePath = [[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"];
+	NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+	&lt;#imageView#&gt;.image = [UIImage imageNamed:@"&lt;#imageName#&gt;" inBundle:bundle withConfiguration:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>26A47726-DFE9-4958-98C4-B11E7D15962D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>如果需要使用静态库framework中的bundle资源包,framework文件必须放到Copy Bundle Resources里面,不然读不到资源文件</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Bundle imageUse</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
