@@ -25,8 +25,10 @@
 	<string>26D03BCD-735E-4CFD-8E48-3DBA65BC70A1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>单例</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sharedInstance</string>
+	<string>Method: sharedInstance</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

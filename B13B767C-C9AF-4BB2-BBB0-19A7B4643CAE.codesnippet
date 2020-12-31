@@ -30,7 +30,7 @@ NSMutableAttributedString * attriStr = [[NSMutableAttributedString alloc] initWi
 	<key>IDECodeSnippetSummary</key>
 	<string>行间距 文字格式 颜色 大小</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>AttributedString</string>
+	<string>String: AttributedString</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

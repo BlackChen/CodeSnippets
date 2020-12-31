@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>GCD并行队列创建方法2</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>concurrentQueue2</string>
+	<string>GCD: concurrentQueue2</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

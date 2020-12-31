@@ -6,7 +6,6 @@
 	<string>action</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -22,7 +21,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>动作:点击 长按 滑动等</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>action Method</string>
+	<string>Method: action</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

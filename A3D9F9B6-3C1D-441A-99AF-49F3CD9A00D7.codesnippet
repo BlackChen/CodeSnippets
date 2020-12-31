@@ -20,7 +20,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>对象销毁的方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dealloc</string>
+	<string>Method: dealloc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

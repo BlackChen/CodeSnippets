@@ -21,7 +21,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>版本判断</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@available iOS</string>
+	<string>iOS: @available version</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

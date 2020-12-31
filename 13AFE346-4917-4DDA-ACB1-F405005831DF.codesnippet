@@ -6,7 +6,6 @@
 	<string>stringSize</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -24,7 +23,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>计算文本高度</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Text - size</string>
+	<string>String: Text - size</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

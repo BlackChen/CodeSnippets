@@ -6,7 +6,6 @@
 	<string>hitTest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -29,7 +28,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>超出父视图范围点击事件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Touch</string>
+	<string>Method: Touch</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -26,7 +26,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>读取本地json文件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>read local json file</string>
+	<string>Method: read local json file</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

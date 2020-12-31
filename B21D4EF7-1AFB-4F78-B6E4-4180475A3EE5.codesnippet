@@ -98,7 +98,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>给 NSData 增加 AES 加解密功能</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>AES with NSData </string>
+	<string>DE/EN: AES with NSData </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

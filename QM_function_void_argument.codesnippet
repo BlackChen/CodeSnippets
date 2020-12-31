@@ -19,7 +19,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>创建一个返回值为空并且带参数的方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>返空方法</string>
+	<string>Method: void</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -43,7 +43,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>UITableViewDelegate初始化代码</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewDataSource</string>
+	<string>TableView: DataSource</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

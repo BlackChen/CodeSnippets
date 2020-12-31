@@ -24,7 +24,7 @@ ExtendImplementationOfVoidMethodWithSingleArgument([&lt;#targetClass#&gt; class]
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Extend Implementation Return Single Argument</string>
+	<string>Implementation: Extend Implementation Return Single Argument</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

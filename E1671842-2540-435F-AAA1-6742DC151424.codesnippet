@@ -7,7 +7,6 @@
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
-		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>//https://www.jianshu.com/p/dffc34bd151f
@@ -61,7 +60,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>framework合并</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>framework合并2</string>
+	<string>Setting: framework合并2</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

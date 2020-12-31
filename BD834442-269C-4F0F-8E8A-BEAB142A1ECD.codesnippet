@@ -6,7 +6,6 @@
 	<string>Bundle</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>StringOrComment</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -18,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>Bundle Path</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Bundle path</string>
+	<string>Bundle: path</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

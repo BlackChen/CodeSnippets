@@ -7,7 +7,6 @@
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassInterfaceMethods</string>
-		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (UIView *)statusView{
@@ -49,7 +48,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>状态栏</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>StatusBar</string>
+	<string>Method: StatusBar</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

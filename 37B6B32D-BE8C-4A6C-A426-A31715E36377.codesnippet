@@ -25,7 +25,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>给归档协议的方法增加宏，使用起来超方便</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>EncodeAndDecode</string>
+	<string>DE/EN: EncodeAndDecode</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -38,7 +38,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>UITableViewDelegate方法组</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewDelegate</string>
+	<string>TableView: Delegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -24,7 +24,7 @@ ExtendImplementationOfVoidMethodWithTwoArguments([&lt;#targetClass#&gt; class], 
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Extend Implementation Return Two Arguments</string>
+	<string>Implementation: Extend Implementation Return Two Arguments</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

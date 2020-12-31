@@ -6,7 +6,6 @@
 	<string>bundle</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>StringOrComment</string>
 		<string>CodeExpression</string>
 	</array>
@@ -26,7 +25,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>如果需要使用静态库framework中的bundle资源包,framework文件必须放到Copy Bundle Resources里面,不然读不到资源文件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Bundle imageUse</string>
+	<string>Bundle: imageUse</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

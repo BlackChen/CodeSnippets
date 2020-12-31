@@ -9,34 +9,32 @@
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> /**
-                         * 拨打电话，不弹出提示，拨打完电话不回到原来的应用
-                         *
-                         * @param phoneNumber 电话号码字符串
-                         */
-                        - (void)makePhoneCall:(NSString *)phoneNumber {
-                            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]];
-                        }
+	<string>/**
+ 拨打电话，不弹出提示，拨打完电话不回到原来的应用
+ @param phoneNumber 电话号码字符串
+*/
+- (void)makePhoneCall:(NSString *)phoneNumber {
+   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]];
+}
 
-                        /**
-                         * 拨打电话，弹出提示，拨打完电话回到原来的应用
-                         *
-                         * @param phoneNumber 电话号码字符串
-                         */
-                        - (void)makePhoneCall2:(NSString *)phoneNumber {
-                            UIWebView * callWebview = [[UIWebView alloc] init];
-                            [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]]];
-                            [self.view addSubview:callWebview];
-                        }
+/**
+ 拨打电话，弹出提示，拨打完电话回到原来的应用
+ @param phoneNumber 电话号码字符串
+*/
+- (void)makePhoneCall2:(NSString *)phoneNumber {
+   UIWebView * callWebview = [[UIWebView alloc] init];
+   [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]]];
+   [self.view addSubview:callWebview];
+}
 
-                        /**
-                         * 拨打电话，弹出提示，拨打完电话回到原来的应用(推荐这个！）
-                         * 注意这里是 telprompt://
-                         * @param phoneNumber 电话号码字符串
-                         */
-                        - (void)makePhoneCall3:(NSString *)phoneNumber {
-                            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@",phoneNumber]]];
-                        }</string>
+/**
+ 拨打电话，弹出提示，拨打完电话回到原来的应用(推荐这个！）
+ 注意这里是 telprompt://
+ @param phoneNumber 电话号码字符串
+*/
+- (void)makePhoneCall3:(NSString *)phoneNumber {
+   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@",phoneNumber]]];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CF04B586-BF00-475D-B561-768FD5148AAE</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -44,7 +42,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>拨打电话</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Tel</string>
+	<string>Method: Tel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

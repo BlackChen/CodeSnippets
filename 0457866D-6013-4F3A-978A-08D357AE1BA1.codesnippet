@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -26,7 +28,7 @@ inhibit_all_warnings! //cocoPods警告</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>消除警告</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Warning - 警告</string>
+	<string>Define: Warning - 警告</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

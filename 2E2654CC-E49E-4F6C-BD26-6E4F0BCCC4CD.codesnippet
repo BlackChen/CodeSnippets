@@ -31,7 +31,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>UICollectionView懒加载快速初始化</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UICollectionView init</string>
+	<string>Method: UICollectionView init</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

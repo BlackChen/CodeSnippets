@@ -24,7 +24,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>a funtion that can generate timestamp fron current time</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>当前时间戳</string>
+	<string>Method: 当前时间戳</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

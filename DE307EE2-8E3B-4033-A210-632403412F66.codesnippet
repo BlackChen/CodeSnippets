@@ -7,7 +7,6 @@
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassInterfaceMethods</string>
-		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (void)do&lt;#doWhat?#&gt; {
@@ -22,7 +21,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>do 方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>do Method</string>
+	<string>Method:  do?</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

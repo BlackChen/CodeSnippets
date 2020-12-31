@@ -32,7 +32,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>用swizzle方式创建property的getter/setter</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>swizzle创建属性</string>
+	<string>Method: swizzle创建属性</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
