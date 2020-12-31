@@ -3,26 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>///</string>
+	<string>GCD_Main</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
- @brief &lt;# brief #&gt;
- @discussion &lt;#discussion#&gt;  
- @param &lt;#param#&gt;   &lt;#detail#&gt; 
- @result &lt;#return#&gt;
- */</string>
+	<string>dispatch_async(dispatch_get_main_queue(), ^{
+        &lt;#code#&gt;
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F096F0E-8310-4FA9-9046-8311ED15DFCB</string>
+	<string>2B2A78A6-3DB5-4D1C-8401-B0C4108F3544</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>多行注释</string>
+	<string>GCD Maint queue block</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation</string>
+	<string>GCD: Main</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

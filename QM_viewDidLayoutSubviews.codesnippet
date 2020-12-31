@@ -3,26 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>///</string>
+	<string>viewDidLayoutSubviews</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
- @brief &lt;# brief #&gt;
- @discussion &lt;#discussion#&gt;  
- @param &lt;#param#&gt;   &lt;#detail#&gt; 
- @result &lt;#return#&gt;
- */</string>
+	<string>- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    &lt;#code#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F096F0E-8310-4FA9-9046-8311ED15DFCB</string>
+	<string>494D85BB-30BB-434A-9383-2B0CAD69B785</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>多行注释</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation</string>
+	<string>viewDidLayoutSubviews</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,26 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>///</string>
+	<string>Method_Observer</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
- @brief &lt;# brief #&gt;
- @discussion &lt;#discussion#&gt;  
- @param &lt;#param#&gt;   &lt;#detail#&gt; 
- @result &lt;#return#&gt;
- */</string>
+	<string>#pragma mark - Observer Method
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSString *, id&gt; *)change context:(void *)context{
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F096F0E-8310-4FA9-9046-8311ED15DFCB</string>
+	<string>0694D07C-5801-4583-95A9-D0212ADFE2F0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>多行注释</string>
+	<string>观察方法代码块标识</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation</string>
+	<string>Observer Method</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

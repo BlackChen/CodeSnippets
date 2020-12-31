@@ -3,26 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>///</string>
+	<string>externRefInH</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
- @brief &lt;# brief #&gt;
- @discussion &lt;#discussion#&gt;
- @param &lt;#param#&gt;   &lt;#detail#&gt;
- @result &lt;#return#&gt;
- */</string>
+	<string>extern &lt;#type#&gt; *const &lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>467E5367-79CF-4820-98CE-D2ABA8F8BE9D</string>
+	<string>21FDCAF1-C5B5-4F0C-A9EE-895654127294</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>多行注释</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation</string>
+	<string>extern Reference in *.h file</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

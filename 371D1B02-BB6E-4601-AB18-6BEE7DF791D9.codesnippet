@@ -3,26 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>///</string>
+	<string>Memory_Strongself</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**
- @brief &lt;# brief #&gt;
- @discussion &lt;#discussion#&gt;  
- @param &lt;#param#&gt;   &lt;#detail#&gt; 
- @result &lt;#return#&gt;
- */</string>
+	<string>__strong typeof(&lt;#weakself#&gt;) = &lt;#weakself#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F096F0E-8310-4FA9-9046-8311ED15DFCB</string>
+	<string>371D1B02-BB6E-4601-AB18-6BEE7DF791D9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>多行注释</string>
+	<string>Strong修饰自己</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation</string>
+	<string>StrongSelf</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

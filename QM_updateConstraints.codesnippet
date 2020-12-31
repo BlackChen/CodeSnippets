@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>//.</string>
+	<string>updateConstraints</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;# summary #&gt; */</string>
+	<string>- (void)updateConstraints {
+    &lt;#code#&gt;
+    [super updateConstraints];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>812F5708-E49C-442E-9B74-6CD6B4981A23</string>
+	<string>6D8F1F97-6FDD-44F6-890D-BD590F3C5F8D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>单行注释</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Code Annotation</string>
+	<string>updateConstraints</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
