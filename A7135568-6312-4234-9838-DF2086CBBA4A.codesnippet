@@ -23,11 +23,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A7135568-6312-4234-9838-DF2086CBBA4A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>App launch notification</string>
+	<string> App启动通知</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Notification: App启动通知</string>
+	<string>Notification: App launch notification</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -23,7 +23,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D7227C17-6368-4FA9-BCD1-D354BC129AD9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>UILabel快速懒加载初始化</string>
 	<key>IDECodeSnippetTitle</key>

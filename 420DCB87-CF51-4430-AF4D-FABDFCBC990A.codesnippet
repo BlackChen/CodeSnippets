@@ -34,7 +34,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>420DCB87-CF51-4430-AF4D-FABDFCBC990A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>UITableViewDelegate方法组</string>
 	<key>IDECodeSnippetTitle</key>

@@ -61,7 +61,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>03B5A35E-EB35-4CA6-BE35-A6CDADBF3E6D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>UICollectionViewDataSource方法组</string>
 	<key>IDECodeSnippetTitle</key>

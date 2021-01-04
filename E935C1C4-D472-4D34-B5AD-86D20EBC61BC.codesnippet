@@ -41,7 +41,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E935C1C4-D472-4D34-B5AD-86D20EBC61BC</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>生命周期函数组模版</string>
 	<key>IDECodeSnippetTitle</key>

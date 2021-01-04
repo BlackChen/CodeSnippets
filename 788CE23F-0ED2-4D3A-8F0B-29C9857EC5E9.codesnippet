@@ -22,7 +22,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>788CE23F-0ED2-4D3A-8F0B-29C9857EC5E9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>UITableView快速初始化</string>
 	<key>IDECodeSnippetTitle</key>

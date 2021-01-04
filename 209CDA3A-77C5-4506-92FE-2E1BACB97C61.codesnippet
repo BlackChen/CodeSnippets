@@ -22,9 +22,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>a funtion that can generate timestamp fron current time</string>
+	<string>当前时间戳: a funtion that can generate timestamp fron current time</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Method: 当前时间戳</string>
+	<string>Method: timestamp fron current time</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

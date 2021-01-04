@@ -27,7 +27,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2E2654CC-E49E-4F6C-BD26-6E4F0BCCC4CD</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>UICollectionView懒加载快速初始化</string>
 	<key>IDECodeSnippetTitle</key>

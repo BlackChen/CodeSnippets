@@ -16,7 +16,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A3D9F9B6-3C1D-441A-99AF-49F3CD9A00D7</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>对象销毁的方法</string>
 	<key>IDECodeSnippetTitle</key>
