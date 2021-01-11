@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazySegmentedControl</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// UISegmentedControl
+- (UISegmentedControl *)segmentedControl{
+    if (!_segmentedControl) {
+        //先创建一个数组用于设置标题
+        NSArray *arr = [[NSArray alloc]initWithObjects:@"先生", @"女士", nil];
+        
+        //初始化UISegmentedControl
+        //在没有设置[segment setApportionsSegmentWidthsByContent:YES]时，每个的宽度按segment的宽度平分
+        UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:arr];
+        
+        //设置frame
+        segment.frame = CGRectMake(0, 2, 100, 40);
+        
+        //管理Segment的内容
+        //设置下标为3的segment的标题 下标以0开始 iOS里的所有下标都是以0开始
+        [segment setTitle:@"大便" forSegmentAtIndex:3];
+        
+        //设置下标为4的segment的图片
+        [segment setImage:[UIImage imageNamed:@"maopiao"] forSegmentAtIndex:4];
+        //设置设置竖屏状态下segments的背景图片
+        [segment setBackgroundImage:[UIImage imageNamed:@"yellow"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        
+        [segment insertSegmentWithImage:[UIImage imageNamed:@"3"] atIndex:2 animated:YES]; //添加分页,并设置图片
+        [segment insertSegmentWithTitle:@"ddd" atIndex:0 animated:YES];//添加分页,并设置标题
+        [segment numberOfSegments];//得到segment的数量
+        [segment removeAllSegments];//移出所有segment
+        [segment removeSegmentAtIndex:2 animated:YES];//移出下标为2的segment
+        segment.selectedSegmentIndex = 0;//选中第几个segment 一般用于初始化时选中
+        
+        //默认为NO 当设置为YES时，当被选中后，一会儿后不显示被选中状态(最左边的样子)，不选中状态即下图的右边几个按钮一样
+        segment.momentary = YES;
+        
+        //设置segment的外观和字体颜色
+        segment.tintColor = [UIColor redColor];
+        //segment.segmentedControlStyle = UISegmentedControlStyleBar;此属性在ios7之后不再有任何效果
+        
+        [segment setEnabled:NO]; //设置segment是否可用 此方法是其父类UIControl的方法
+        [segment setEnabled:NO forSegmentAtIndex:2];//设置下标为2的segment不可用
+        [segment setWidth:100 forSegmentAtIndex:2]; //这时下表为2的segment的宽度
+        [segment setContentOffset:CGSizeMake(10, 10) forSegmentAtIndex:2];//设置内容偏移
+        segment.apportionsSegmentWidthsByContent = YES; //是否根据segment的内容改变segment的宽度
+        
+        //设置Segment的字体
+        NSDictionary *dic = @{
+                              //1.设置字体样式:例如黑体,和字体大小
+                              NSFontAttributeName:[UIFont fontWithName:@"Arial-BoldMT" size:20],
+                              //2.字体颜色
+                              NSForegroundColorAttributeName:[UIColor grayColor]
+                              };
+        
+        [segment setTitleTextAttributes:dic forState:UIControlStateNormal];
+        
+        //当选中不同的segment时,会触发不同的点击事件
+        [segment addTarget:self action:@selector(selected:) forControlEvents:UIControlEventValueChanged];
+        
+        _segmentedControl = segment;
+    }
+    return _segmentedControl;
+}
+
+- (void)selected:(UISegmentedControl *)segement{
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3421B3E6-ED90-4301-8056-8C04A12ED134</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>初始化分页控制器</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Segment：UISegmentedControl</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

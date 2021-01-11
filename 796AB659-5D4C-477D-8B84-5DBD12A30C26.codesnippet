@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>changeCellRect</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//Cell固定
+    CGSize itemSize = CGSizeMake(50, 50);
+    UIGraphicsBeginImageContextWithOptions(itemSize, NO ,0.0);
+    CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+    [cell.imageView.image drawInRect:imageRect];
+    cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+
+//原生cell位置调整
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.separatorInset = UIEdgeInsetsMake(self.separatorInset.top, 10, self.separatorInset.bottom, 10);
+    self.imageView.bounds = CGRectMake(0, 0, 60, 60);
+    self.imageView.layer.cornerRadius = 30;
+    self.imageView.layer.masksToBounds = YES;
+    self.imageView.frame = CGRectMake(10,10,60,60);
+    
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    CGRect tmpFrame = self.textLabel.frame;
+    
+    tmpFrame.origin.x = 80;
+    tmpFrame.origin.y = 15;
+    self.textLabel.frame = tmpFrame;
+    self.textLabel.textColor = [UIColor blackColor];
+    self.textLabel.font = [UIFont systemFontOfSize:15];
+    
+    tmpFrame = self.detailTextLabel.frame;
+    tmpFrame.origin.x = 80;
+    tmpFrame.origin.y = CGRectGetMaxY(self.imageView.frame)-20;
+    self.detailTextLabel.frame = tmpFrame;
+    self.detailTextLabel.textColor = [UIColor grayColor];
+    self.detailTextLabel.font = [UIFont systemFontOfSize:10];
+    self.detailTextLabel.numberOfLines = 3;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>796AB659-5D4C-477D-8B84-5DBD12A30C26</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TableViewCell: changeRect</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

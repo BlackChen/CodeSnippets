@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>DrawImage</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ *  图片合成
+ *
+ *  @param image1 源图片
+ *  @param image2 目标图片
+ *
+ *  @return 返回合成后的图片
+ */
++ (UIImage *)addImage:(UIImage *)image1 toImage:(UIImage *)image2 {
+
+    UIGraphicsBeginImageContext(image2.size);
+
+    // Draw image1
+    [image1 drawInRect:CGRectMake(0, 0, image1.size.width, image1.size.height)];
+
+    // Draw image2
+    [image2 drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];
+
+    UIImage *resultingImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultingImage;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>62335F7F-A435-4496-A7F3-86578B78A69F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>图片合成</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Image: ImageDraw</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

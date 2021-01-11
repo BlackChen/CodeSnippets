@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>FullTextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//UITextField的常用方法
+　// 创建
+　　UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(50, 100, 200, 40)];
+ 
+    // 最常用
+　　textField.backgroundColor = [UIColor grayColor]; 　　// 设置背景颜色
+　　textField.alpha = 1.0; 　　// 设置透明度，范围从0.0-1.0之间
+　　textField.textColor = [UIColor redColor]; 　　// 设置文字的颜色
+　　textField.text = &lt;#默认的文字#&gt;;　　 // 设置默认的文字
+　　textField.clearsOnBeginEditing = YES;       // 当第二次输入的时候，清空上一次的内容
+　　textField.placeholder = &lt;#这是提示文字#&gt;; 　　// 显示提示文件，当输入文字时将自动消失
+    
+　　textField.font = [UIFont boldSystemFontOfSize:25.0f]; 　　// 设置字体的大小
+　　textField.textAlignment = NSTextAlignmentCenter; 　　// 设置文字的对其方式
+    
+　// 设置textField的样式
+　　textField.borderStyle = UITextBorderStyleRoundedRect;　　// 设置输入框的样式
+　　textField.minimumFontSize = 20.0f;　　 // 设置自动缩小显示的最小字体大小
+　　textField.tag = 1001;　　 // 设置textField的标签，主要用在委托方法中
+　　textField.secureTextEntry = NO; 　　// 设置是否以密码的圆点形式显示
+　　textField.autocorrectionType = YES; 　　// 设置是否启动自动提醒更新功能
+　　textField.returnKeyType = UIReturnKeyDefault;　　 // 设置弹出的键盘带形式与带的按键
+　　// 以下是弹出的键盘的带按钮的全部样式
+//    typedef NS_ENUM(NSInteger, UIReturnKeyType) {
+//        UIReturnKeyDefault, // 默认的样式
+//        UIReturnKeyGo, // 带一个go按钮
+//        UIReturnKeyGoogle, // 带一个Search按钮，使用google搜索
+//        UIReturnKeyJoin, // 带一个Join按钮，登录时使用
+//        UIReturnKeyNext, // 带一个Next按钮，进入下一个输入框
+//        UIReturnKeyRoute, // 带一个Route按钮（路线）
+//        UIReturnKeySearch, // 带一个Search按钮（搜索）
+//        UIReturnKeySend, // 带一个Send按钮（发送）
+//        UIReturnKeyYahoo, // 带一个Search，使用yahoo搜索（搜索）
+//        UIReturnKeyDone, // 带一个Done按钮（完成）
+//        UIReturnKeyEmergencyCall, // 带一个emergency call按钮（紧急电话）
+//    };
+ 
+    textField.keyboardType = UIKeyboardTypeNamePhonePad; 　　// 弹出的键盘的样式
+    
+　　textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;　　 // 输入的对齐方法
+　　textField.autoresizingMask = UIViewAutoresizingFlexibleHeight; 　　// 自动适应高度
+　　textField.clearButtonMode = UITextFieldViewModeWhileEditing; 　　// 编辑的时候会显示出删除全部的小X
+    // 出现删除全部小X的时间
+//    typedef enum {
+//        UITextFieldViewModeNever　// 重不出现
+//        UITextFieldViewModeWhileEditing, // 编辑时出现
+//        UITextFieldViewModeUnlessEditing,　// 除了编辑外都出现
+//        UITextFieldViewModeAlways 　// 一直出现
+//    } UITextFieldViewMode;
+    
+    //首字母是否大写
+　　textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    // 以下是字母大写的几种情况
+//    typedef enum {
+//        UITextAutocapitalizationTypeNone, // 不自动大写
+//        UITextAutocapitalizationTypeWords,　// 单词首字母大写
+//        UITextAutocapitalizationTypeSentences,　// 句子的首字母大写
+//        UITextAutocapitalizationTypeAllCharacters, // 所有字母都大写
+//    } UITextAutocapitalizationType;
+    
+    //键盘外观
+　　textField.keyboardAppearance = UIKeyboardAppearanceAlert;
+//    typedef enum {
+//        UIKeyboardAppearanceDefault， // 默认外观，浅灰色
+//        UIKeyboardAppearanceAlert，　 　// 深灰 石墨色
+//    } UIReturnKeyType;
+        
+    //最右侧加图片是以下代码　 左侧类似
+　　UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:&lt;#imagename#&gt;]];
+    // textField.rightView = image;
+    // textField.rightViewMode = UITextFieldViewModeAlways;
+　　textField.leftView = image;
+　　textField.leftViewMode = UITextFieldViewModeAlways;
+    
+    // 要想设置委托，就需要实现协议，需要在.h文件中添加协议
+　　textField.delegate = self; 　　// 设置委托
+ 
+    // 添加到view上，并释放内存
+　　[self.view addSubview:textField];
+　　[textField release], textField = nil;
+ 
+ //当开始点击textField会调用的方法
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    NSLog(@"开始编辑");
+}
+//当textField编辑结束时调用的方法
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    NSLog(@"结束编辑");
+}
+//按下Done按钮的调用方法，我们让键盘消失
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E0D36BB3-E066-4E36-A4EB-3582FB40D5BF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>TextField初始化和代理</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TextField：Full</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

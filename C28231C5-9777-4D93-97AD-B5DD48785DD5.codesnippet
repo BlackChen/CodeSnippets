@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>dispatch_group_notify</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+    //加入队列的block事件1;
+    NSLog(@"block1开始执行");
+    });
+
+    dispatch_group_async(group, queue, ^{
+    //加入队列的block事件2;
+    NSLog(@"block2开始执行");
+    });
+
+    dispatch_group_notify(group, queue, ^{
+    //block1和block2执行完成之后的押尾任务;
+    NSLog(@"block1和block2都完成了");
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C28231C5-9777-4D93-97AD-B5DD48785DD5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>押尾任务</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD：Dispatch</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

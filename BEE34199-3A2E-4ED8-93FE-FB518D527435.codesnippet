@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ScreenCut</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 截屏
++ (UIImage*)beginImageContext:(CGRect)rect View:(UIView*)view{
+    //该方法模糊
+//    UIGraphicsBeginImageContext(view.frame.size); //currentView 当前的view
+//    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//
+//    //从全屏中截取指定的范围
+//    CGImageRef imageRef = viewImage.CGImage;
+//
+//    CGImageRef imageRefRect = CGImageCreateWithImageInRect(imageRef, rect);
+//    UIImage *sendImage = [[UIImage alloc] initWithCGImage:imageRefRect];
+//    /******截取图片保存的位置，如果想要保存，请把return向后移动*********/
+//    NSData *data = UIImagePNGRepresentation(viewImage);
+//    NSString *path = [NSHomeDirectory() stringByAppendingString:@"/documents  /1.png"];
+//    [data writeToFile:path atomically:YES];
+//
+////    NSLog(@"=================%@",path);
+//
+//    UIImageWriteToSavedPhotosAlbum(sendImage, nil, nil, nil);
+//    CGImageRelease(imageRefRect);
+
+//清晰度高
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(rect.size.width, rect.size.height), NO, 0.0); //currentView 当前的view  创建一个基于位图的图形上下文并指定大小为
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];//renderInContext呈现接受者及其子范围到指定的上下文
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();//返回一个基于当前图形上下文的图片
+    UIGraphicsEndImageContext();//移除栈顶的基于当前位图的图形上下文
+    UIImageWriteToSavedPhotosAlbum(viewImage, nil, nil, nil);//然后将该图片保存到图片库
+
+    return viewImage;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BEE34199-3A2E-4ED8-93FE-FB518D527435</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>截屏</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Image: ScreenCut</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

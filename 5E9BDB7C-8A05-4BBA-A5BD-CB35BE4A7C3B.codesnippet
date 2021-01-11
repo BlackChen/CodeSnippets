@@ -9,7 +9,16 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// 返回虚线image的方法
+	<string>// 画虚线
+   // 创建一个imageView 高度是你想要的虚线的高度 一般设为2
+   UIImageView *_lineImg = [[UIImageView alloc] initWithFrame:CGRectMake(w*0.75, 10, 2, h-20)];
+   // 调用方法 返回的iamge就是虚线
+   _lineImg.image = [self drawLineByImageView:_lineImg];
+   // 添加到控制器的view上
+   [self addSubview:_lineImg];
+}
+
+// 返回虚线image的方法
 - (UIImage *)drawLineByImageView:(UIImageView *)imageView{
     UIGraphicsBeginImageContext(imageView.frame.size); //开始画线 划线的frame
     [imageView.image drawInRect:CGRectMake(0, 0, imageView.frame.size.width, imageView.frame.size.height)];
